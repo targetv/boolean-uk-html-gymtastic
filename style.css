@@ -103,6 +103,9 @@ footer li {
   font-weight: light;
   font-size: 17px;
 }
+footer li a {
+  color: white;
+}
 /* About Us CSS */
 .locations {
   margin-top: 20px;
