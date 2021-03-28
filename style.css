@@ -137,9 +137,20 @@ footer li a {
   margin-top: 20px;
   color: #42aaf5;
 }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-gap: 10px;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, 300px);
+    grid-gap: 5px;
+  }
+}
 
 .card {
-  display: inline-block;
   border: solid 1px black;
   height: 200px;
   width: 200px;
