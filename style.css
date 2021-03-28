@@ -14,6 +14,13 @@ header .nav-bar {
   grid-gap: 30px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  header .nav-bar {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    height: 240px;
+  }
+}
 .nav-bar h2 {
   color: white;
   padding: 15px 0 0 20px;
@@ -45,16 +52,19 @@ span.light-blue {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
 @media (max-width: 900px) {
   .button-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 600px) {
-    .button-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
+
 .button {
   border: solid 1px grey;
   width: 200px;
