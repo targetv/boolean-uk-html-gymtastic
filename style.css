@@ -53,12 +53,6 @@ span.light-blue {
   grid-gap: 20px;
 }
 
-@media (max-width: 900px) {
-  .button-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 600px) {
   .button-container {
     grid-template-columns: repeat(1, 1fr);
